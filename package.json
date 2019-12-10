@@ -1,0 +1,27 @@
+{
+  "name": "appinesstest",
+  "version": "1.0.0",
+  "description": "Interview Test",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasim08/appinessTest.git"
+  },
+  "keywords": [
+    "node.js",
+    "first",
+    "user",
+    "as",
+    "an",
+    "admin"
+  ],
+  "author": "jasim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasim08/appinessTest/issues"
+  },
+  "homepage": "https://github.com/jasim08/appinessTest#readme"
+}
