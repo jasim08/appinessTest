@@ -25,6 +25,9 @@
   },
   "homepage": "https://github.com/jasim08/appinessTest#readme",
   "dependencies": {
+    "bluebird": "^3.7.2",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
     "mysql": "^2.17.1"
   }
 }
