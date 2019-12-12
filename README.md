@@ -17,15 +17,17 @@ mysql> create table users (userId INT not null primary key auto_increment , firs
 ======================
 
 Pull the project from https://github.com/jasim08/appinessTest.git
+
 Open the project folder in terminal and type,
+
 npm install --save
 
 
 ======================
 
 After install required packages, 
-run server.js file
 
+run server.js file
 
 Console in Terminal exact below
 
