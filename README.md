@@ -22,19 +22,25 @@ npm install --save
 
 
 ======================
+
 After install required packages, 
 run server.js file
 
 
 Console in Terminal exact below
+
 ################
+
 Database connected sucessfully
+
 ################
+
 listening on localhost:3000
 
 ==================
 Open browser and serach
-localhost:3000
+
+http://localhost:3000 or http:localhost:3000/register
 
 That's it you can now enjoy creating Admin and user as well.
 
