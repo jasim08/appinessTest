@@ -40,9 +40,10 @@ Database connected sucessfully
 listening on localhost:3000
 
 ==================
-Open browser and serach
 
-http://localhost:3000 or http:localhost:3000/register
+Open browser and search
+
+http://localhost:3000 or http://localhost:3000/register
 
 That's it you can now enjoy creating Admin and user as well.
 
