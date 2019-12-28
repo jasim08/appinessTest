@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tesseract.js Offline</title>
+  <script src="lib-tesseract/tesseract.min.js"></script>
+  <script>
+
+  </script>
+</head>
+<body>
+<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+<p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+<p><img id="output" width="200" /> <textarea id="textArea" style="width:50%;height:500px;"></textarea></p>
+
+<script>
+
+  const { createWorker } = Tesseract;
+  const worker = createWorker({
+    workerPath: 'lib-tesseract/worker.min.js',
+    langPath: 'lang-data',
+    corePath: 'lib-tesseract/tesseract-core.wasm.js',
+    logger: m => console.log(m),
+  });
+
+  let loadFile = function(event) {
+    let image = document.getElementById('output');
+    image.src = URL.createObjectURL(event.target.files[0]);
+
+
+    (async () => {
+      await worker.load();
+      await worker.loadLanguage('tamil');
+      await worker.initialize('tamil');
+      const { data: { text } } = await worker.recognize(image.src);
+      console.log(text);
+      document.getElementById('textArea').value = text;
+      await worker.terminate();
+    })();
+  };
+</script>
+</body>
+</html>
